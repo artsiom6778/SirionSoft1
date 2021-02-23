@@ -1,0 +1,390 @@
+body {
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: #6c7279;
+    background-color: #fff;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0 0 10px 0;
+}
+
+/* container
+=================*/
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* header
+=================*/
+.header {
+    width: 100%;
+    height: 100px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+
+.header___inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    border-bottom: 1px solid #505268;
+    align-items: center;
+}
+
+/* header
+=================*/
+.nav {
+    display: flex;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.nav__link {
+    margin-left: 50px;
+    color: #fff;
+    text-decoration: none;
+    opacity: .75;
+    transition: opacity .15s linear;
+}
+
+.nav__link:first-child {
+    margin: 0;
+}
+
+.nav__link:hover {
+    opacity: 1;
+}
+
+/* intro
+=================*/
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 750px;
+    background: #31344f url("img/Intro.jpg") center no-repeat;
+    padding-top: 100px;
+}
+
+.intro__inner {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro__title {
+    margin: 0 0 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 65px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.1;
+}
+
+.intro__subtitle {
+    margin-bottom: 60px;
+    font-size: 22px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+/* button
+=================*/
+.btn {
+    display: inline-block;
+    vertical-align: top;
+    padding: 14px 40px;
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    border: 0;
+    cursor: pointer;
+    font-size: 13px;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: .15s;
+}
+
+.btn--red {
+    background-color: #e84545;
+}
+
+.btn--red:hover {
+    background-color: #dd3434;
+}
+
+/* features
+=================*/
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 95px 0;
+}
+
+.features__item {
+    margin: 25px 0;
+    padding: 0 40px;
+    width: 33.333%;
+    text-align: center;
+}
+
+.features__icon {
+    margin-bottom: 25px;
+}
+
+.features__title {
+    font-size: 14px;
+    color: #2d3033;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.features__text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #6c7279;
+}
+
+/* Works */
+.works {
+    display: flex;
+    flex-wrap: wrap;
+
+
+}
+
+.works__item {
+    position: relative;
+    width: 25%;
+    height: 350px;
+    overflow: hidden;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #ffffff;
+
+}
+
+.works__photo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.works__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    background-color: rgba(230, 69, 69, .9);
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: opacity .2s linear;
+}
+
+.works__item:hover .works__content {
+    opacity: 1;
+}
+
+
+.works__title {
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.works__text {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/*Team
+===========*/
+
+.team {
+    margin: 100px 0 70px;
+}
+
+.team__inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__item {
+    width: 25%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    display: block;
+    width: 100%;
+    height: 275px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.team__name {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #2d3033;
+}
+
+.team__prof {
+    color: #e84545;
+    font-size: 13px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.team__text {
+    font-size: 14px;
+    color: #6c7279;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/*Social
+===========*/
+.social {
+    display: flex;
+
+}
+
+.social__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+    border: 1px solid #e8ecee;
+    transition: background .15s linear;
+
+}
+
+.social__item:hover {
+    background-color: #6c7279;
+}
+
+.social__item:hover .social__icon {
+    fill: #000;
+}
+
+.social__icon {
+    fill: #c6cacc;
+    display: block;
+    height: 18px;
+    transition: fill .1s linear;
+}
+
+
+/* Review
+=========*/
+.review {
+    background-color: #53354a;
+}
+
+.review__item {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.review__photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+
+.review__content {
+    width: 50%;
+    padding-left: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;;
+
+}
+
+.review__text {
+    font-family: 'Cardo', serif;
+    font-style: italic;
+    font-size: 36px;
+    line-height: 1.2;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.review__images {
+    z-index: 1;
+    top: 50%;
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.review__author {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/*download
+===============*/
+
+.download {
+    margin: 90px 0;
+    text-align: center;
+}
+
+.download__text {
+    font-size: 28px;
+    font-weight: 300;
+    color: #2d3033;
+    margin-bottom: 5px;
+}
+
+.download__subtext {
+    color: #2d3033;
+    margin-bottom: 30px
+}
+
+.basement {
+    background-color: #3a3e64;
+}
